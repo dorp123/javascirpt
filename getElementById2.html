@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>getElementById 2</title>
+</head>
+
+<body>
+    <h1 id="head">Click The Image!</h1>
+    <img src="bonsai.jpg" alt="The Bonsai tree" id="bonsai" onclick="go2()">
+    <script>
+        function go2() {
+            var theClick = document.getElementById("bonsai");
+            //var theHead = document.getElementById("head");
+            document.body.style.background = 'red';
+            document.getElementById("head").style.color = 'yellow';
+            document.getElementById("head").style.fontSize = '3em';
+            //alert("Stop That!");
+        }
+    </script>
+</body>
+
+</html>

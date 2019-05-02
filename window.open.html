@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>confirm</title>
+    <title>window.open()</title>
 </head>
 
 <body>
+    <a href="#" onclick="go2()">Hit Me!</a>
     <script>
-        confirm("are you Happy?");
-        .
+        function go2() {
+            window.open("http://www.walla.co.il", "walla", "width=500,height=500");
+            //window.open("URL","Name","Parameters")
+        }
     </script>
 </body>
 

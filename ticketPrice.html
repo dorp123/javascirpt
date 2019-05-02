@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ticket price</title>
+</head>
+
+<body>
+    <form action="" name="forme">
+        <label for="">Enter Your Age To Get The Price</label>
+        <input type="text" name="uage">
+        <input type="button" value="click" onclick="checkAge()">
+    </form>
+    <script>
+        function checkAge() {
+            var age = document.forme.uage.value;
+            if (age < 12) {
+                alert("The price is 70nis");
+            } else if (age > 65) {
+                alert("The price is 50nis");
+            } else {
+                alert("The price is 150nis");
+            }
+        }
+    </script>
+</body>
+
+</html>

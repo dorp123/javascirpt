@@ -5,13 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>confirm</title>
+    <title>Scope</title>
 </head>
 
 <body>
     <script>
-        confirm("are you Happy?");
-        .
+        var c = 100;
+
+        function go2() {
+            var a = 20;
+            alert(c);
+        }
+
+        function go3() {
+            var b = 30;
+            alert(c);
+        }
+        go2();
+        go3();
     </script>
 </body>
 

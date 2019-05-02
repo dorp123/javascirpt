@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+    form{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="container1"></div>
+<form action="">
+    <label for="">Name:</label>
+    <input type="text" id="fname"> 
+    <br>
+    <label for="">last name:</label>
+    <input type="text" id="lname">
+    <br>
+    <label for="">City</label>
+    <input type="text" id="cname">
+    <br>
+    <br>
+    <input type="button" name="btn" value="Send" onclick="thanks()">
+</form>
+<script>
+function thanks() {
+    var namef = document.getElementById("fname").value;
+    var namel = document.getElementById("lname").value;
+    var namec = document.getElementById("cname").value;
+    var nWin = window.open("", "TheWin", "width=500, height=500");
+    nWin.document.write("Thank You " + namef + " " + namel + " From: " + namec + " ");
+
+}
+
+</script>
+</body>
+</html>

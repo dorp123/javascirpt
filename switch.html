@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Switch</title>
+</head>
+
+<body>
+    <form action="" name="forme">
+        <label for=""></label>
+        <input type="text" name="pass">
+        <input type="button" value="Enter Site" onclick="fun()">
+    </form>
+    <script>
+        function fun() {
+            var user = document.forme.pass.value;
+            switch (user) {
+                case "123":
+                    location.href = "http://www.walla.co.il";
+                    break;
+                case "345":
+                    location.href = "http://www.mako.co.il";
+                    break;
+                case "567":
+                    location.href = "http://www.google.co.il";
+                    break;
+                default:
+                    alert("Wrong Pass Try Again!");
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clock</title>
+</head>
+
+<body>
+    <!-- onload="runTime()"-->
+    <form action="" name="forme">
+        <input type="text" name="clock"></form>
+    <script>
+        function runTime() {
+            var t;
+            var theTime = new Date();
+            var sc = theTime.getSeconds();
+            if (sc < 10) {
+                sc = "0" + sc;
+            }
+            var mn = theTime.getMinutes();
+            if (mn < 10) {
+                mn = "0" + mn;
+            }
+            var hr = theTime.getHours();
+            if (hr > 12) {
+                hr = hr - 12;
+                t = hr + ":" + mn + ":" + sc + "PM";
+            } else {
+                t = hr + ":" + mn + ":" + sc + "AM";
+            }
+
+            document.forme.clock.value = t;
+            //setTimeout("runTime()", 1000);
+        }
+        setInterval("runTime()", 1000);
+    </script>
+</body>
+
+</html>

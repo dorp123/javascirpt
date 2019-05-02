@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document Properties 2</title>
+</head>
+
+<body>
+    <h1>Change The Color:</h1>
+    <form action="">
+        <input type="button" value="red" onclick="theColor('red','yellow')">
+        <input type="button" value="green" onclick="theColor('green','pink')">
+        <input type="button" value="blue" onclick="theColor('blue','white')">
+    </form>
+    <script>
+        function theColor(mamuta, tmamuta) {
+            document.bgColor = mamuta;
+            document.fgColor = tmamuta;
+        }
+
+        /*function green() {
+            document.bgColor = "green";
+        }
+
+        function blue() {
+            document.bgColor = "blue";
+        }*/
+    </script>
+</body>
+
+</html>
