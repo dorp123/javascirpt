@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>functions</title>
+    <script>
+        //a function without parameters and without a returning value
+        function go2() {
+            alert("Hi Shosh");
+        }
+        go2();
+
+        //a function without parameters and with a returning value
+        function go3() {
+            return "Hi shosh";
+        }
+        console.log(go3());
+
+        //a function with parameters and without a returning value
+        function go4(eat) {
+            document.write("Today i ate " + eat);
+        }
+        go4("I Scream");
+        var a
+        //a function with parameters and with a returning value
+        function add(num1 = 100, num2 = 200) {
+            a = num1;
+            return num1 * num2;
+        }
+        console.log(add(a, 500));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
